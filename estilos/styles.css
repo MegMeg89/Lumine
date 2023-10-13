@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #544d47;
+}
+
+
+
+/*
+fondo
+#F3F0E8 
+letras
+#544d47
+marron clarito
+#D3C5B7
+verde
+#606C5A
+
+*/
+
+/* BODY */
+body {
+    background: #F3F0E8;
+    max-width: 576px;
+}
+
+/* HEADER */
+header {
+    background: #F3F0E8;
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+}
+
+h1 {
+    background-image: url(../recursos/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -800px;
+    overflow: hidden;
+    width: 20rem;
+    height: 10rem;
+    
+}
+
+
+/* NAV */
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 40%;
+        width: 60%;
+        padding-top: 30%;
+    }
+    #hamburguesa {
+        padding: 0 0 0 28px;
+    }
+    #hamburguesa li {
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75rem;
+        width: 2.5rem;
+    }
+
+    #hamburguesa li a {
+        background: url("../recursos/menu.png") no-repeat center center;
+        background-size: cover;
+        display: block;
+        height: 2.5rem;
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+    
+nav:target #barra {
+    height: 25vh;
+}
+
+nav:target #hamburguesa li:first-child {
+    display: none;
+}
+
+nav:target #hamburguesa li:last-child {
+    display: block;
+}
+
+nav:target #hamburguesa li a {
+    background: url("../recursos/cerrar.png") no-repeat center center;
+    background-size: cover;
+}
+
+#barra {
+    width: 100vw;
+    height: 0;
+    position: absolute;
+    top: 96%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background: #F3F0E8;
+    transition: height .5s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#barra li {
+    display: flex;
+    justify-content: center;
+      
+}
+
+
+#barra li a{
+    text-decoration: none; 
+}
+
+
+
+section:first-child{
+    background-image: url(../recursos/bannercelu.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;  
+}
+
+section:first-child div{    
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section:first-child div p{
+    font-weight: 600;
+}
+
+
+.pastillas{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.pastillas img{
+    border-radius: 50%;
+    width: 28%;
+    height:28%;
+    object-fit: cover;
+    padding-top: 1rem;
+}
+
+.pastillascontenedor{
+display: flex;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+}
+
+.pastillascontenedor div h2, p{
+   font-size: 0.9rem;
+
+}
+
+#bloque{
+    background-image: url(../recursos/fondobloquecelu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+#bloque h2, p{
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+#galeriacontenedor{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+#galeria h2{
+    text-align: center;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;    
+    padding: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contactonombre{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+}
+.contactonombre div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contactonombre div input{
+    display: flex;
+    flex-grow: 1;
+}
+.contactonombre div label{
+    width: 30%;
+}
+
+
+.contactorenovar{
+    display: flex;
+    justify-content: start;
+}
+.contactorenovar div{
+    display: flex;
+
+}
+.checkboxes{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.piedepagina{
+    display: flex;
+}
+
+.piedepagina img{
+    width: 8rem;
+
+}
+
+.datosalumna{
+    width: 60%;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    body{
+        max-width: 991px;
+        
+    }
+    nav{
+        position: relative;
+    }
+    #hamburguesa{
+        display: none;
+    }
+    #barra{
+        overflow: visible;
+        flex-direction: row;
+    }
+    #menu{
+        padding-top: 22%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        max-width: 1300px;
+       margin: auto;
+    }
+    
+}
+
