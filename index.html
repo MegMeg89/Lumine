@@ -49,7 +49,14 @@
     <!-- SECCIÓN PASTILLAS INFORMACIÓN -->
     <section class="pastillas">
       <div class="pastillascontenedor">
-        <img src="./recursos/diseñopersonalizadopc.jpg" alt="diseño personalizado"/>
+        <figure>
+          <picture>
+            <source media="(max-width: 576px)" srcset="./recursos/diseniopersonalizadocel.jpg">
+            <source media="(max-width: 991px)" srcset="./recursos/diseniopersonalizadotablet.jpg">
+            <img src="./recursos/diseniopersonalizadopc.jpg" alt="diseño personalizado"/>
+          </picture>
+        </figure>
+
         <div>
           <h2>Diseño Personalizado</h2>
 
@@ -63,7 +70,14 @@
       </div>
 
       <div class="pastillascontenedor">
-        <img src="./recursos/experienciapc.jpg" alt="experiencia profesional"/>
+        <figure>
+          <picture>
+            <source media="(max-width: 576px)" srcset="./recursos/experienciacelu.jpg">
+            <source media="(max-width: 991px)" srcset="./recursos/experienciatablet.jpg">
+            <img src="./recursos/experienciapc.jpg" alt="experiencia profesional"/>
+          </picture>
+        </figure>
+        
         <div>
           <h2>Experiencia Profesional</h2>
           <p>
@@ -77,7 +91,14 @@
       </div>
 
       <div class="pastillascontenedor">
-        <img src="./recursos/inspiracionpc.jpg" alt="inspiracion sostenible"/>
+        <figure>
+          <picture>
+            <source media="(max-width: 576px)" srcset="./recursos/inspiracioncelu.jpg">
+            <source media="(max-width: 991px)" srcset="./recursos/inspiraciontablet.jpg">
+            <img src="./recursos/inspiracionpc.jpg" alt="inspiracion sostenible"/>
+          </picture>
+        </figure>
+        
         <div>
           <h2>Inspiración Sostenible</h2>
           <p>
@@ -90,7 +111,14 @@
       </div>
 
       <div class="pastillascontenedor">
-        <img src="./recursos/proyectospc.jpg" alt="proyectos destacados"/>
+        <figure>
+          <picture>
+            <source media="(max-width: 576px)" srcset="./recursos/proyectoscelu.jpg">
+            <source media="(max-width: 991px)" srcset="./recursos/proyectostablet.jpg">
+            <img src="./recursos/proyectospc.jpg" alt="proyectos destacados"/>
+          </picture>
+        </figure>
+        
         <div>
           <h2>Proyectos Destacados</h2>
           <p>
@@ -281,12 +309,17 @@
         <li>Año 2023</li>
         <li>Primer Parcial</li>
       </ul>
+       
     </div>
-    <div class="derechos">
-      <img src="./recursos/logo.png" alt="logo"/>
-      <p>Luminé SA. Todos los derechos reservados.®</p>
+    <div class="redes">
       
+      <!-- <img src="./recursos/logofooter.png" alt="logo"/> -->
+      <a href="https://www.instagram.com"><img src="./recursos/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com"><img src="./recursos/facebook.png" alt=""></a>
+      <!-- <p>Luminé SA. Todos los derechos reservados.®</p> -->
     </div>
+    
+    
   </footer>
 
   <script src="js/jquery-3.6.0.min.js"></script>
