@@ -9,30 +9,18 @@
 }
 
 
+/* COLORES:
+Fondo: #F3F0E8 - letras: #544d47 - Detalles: #D3C5B7 */
 
-/*
-fondo
-#F3F0E8 
-letras
-#544d47
-marron clarito
-#D3C5B7
-verde
-#606C5A
-
-*/
 
 /* BODY */
 body {
-    background: #F3F0E8;
-    /* max-width: 576px; */
+    background: #F3F0E8;    
 }
 
 /* HEADER */
 header {
     background: #F3F0E8;
-    /* display: flex;
-    justify-content: center; */
     height: 8rem;
     margin-bottom: 2rem;
 }
@@ -40,7 +28,6 @@ header {
 h1 {
     background: url(../recursos/logocelu.png) center center;
     background-size: cover;
-    
     text-indent: -800px;
     overflow: hidden;
     width: 35vw;
@@ -48,47 +35,45 @@ h1 {
     margin-top: 0.1vh;
     max-width: 196px;
     max-height: 171px;
-    margin: auto;
-    
+    margin: auto;    
 }
-
 
 /* NAV */
 
 @media screen and (max-width: 576px) {
 
-    nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        
-    }
-    #hamburguesa {
-        padding: 0 0 0 28px;
-    }
-    #hamburguesa li {
-        list-style: none;
-        text-indent: -100px;
-        overflow: hidden;
-        margin-top: .75rem;
-        width: 2.5rem;
-    }
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;        
+}
 
-    #hamburguesa li a {
-        background: url("../recursos/menu.png") no-repeat center center;
-        background-size: cover;
-        display: block;
-        height: 2.5rem;
-    }
+#hamburguesa {
+    padding: 0 0 0 28px;
+}
 
-    #hamburguesa li:last-child {
-        display: none;
-    }
+#hamburguesa li {
+    list-style: none;
+    text-indent: -100px;
+    overflow: hidden;
+    margin-top: .75rem;
+    width: 2.5rem;
+}
+
+#hamburguesa li a {
+    background: url("../recursos/menu.png") no-repeat center center;
+    background-size: cover;
+    display: block;
+    height: 2.5rem;
+}
+
+#hamburguesa li:last-child {
+    display: none;
+}
     
 nav:target #barra {
     height: calc(100vh - 2rem);
-    
 }
 
 nav:target #hamburguesa li:first-child {
@@ -113,17 +98,13 @@ nav:target #hamburguesa li a {
     background: #F3F0E8;
     transition: height .5s ease;
     overflow: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
 }
 
 #barra li {
     list-style: none;
     margin: 1.5em;
-                width: 90%;
+    width: 90%;
 }
-
 
 #barra li a{
     text-decoration: none; 
@@ -133,6 +114,7 @@ nav:target #hamburguesa li a {
 }
 }
 
+/* BANNER */
 
 section:first-child{
     background-image: url(../recursos/bannercelu.jpg);
@@ -152,32 +134,24 @@ section:first-child div p{
     font-weight: 600;
 }
 
+/* PASTILLAS INFORMACION */
 
 .pastillas{
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-
 }
-/* .pastillas img{
-    border-radius: 50%;
-    width: 28%;
-    height:28%;
-    object-fit: cover;
-    padding-top: 1rem;
-} */
 
 .pastillascontenedor{
-display: flex;
-gap: 1rem;
-justify-content: center;
-align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .pastillascontenedor div h2, p{
-   font-size: 0.9rem;
-
+    font-size: 0.9rem;
 }
 
 .pastillascontenedor div{
@@ -185,45 +159,38 @@ align-items: center;
 }
 
 figure{
-    line-height: 0;}
+    line-height: 0;
+}
 
-    figure img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
-        filter: drop-shadow(1px 1px 4px #544d47);
-    }
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 4px #544d47);
+}
 
-    .pastillas a{
-        text-decoration: none;
-        box-shadow: 0 2px 5px #544d47;
-        border-radius: .3rem;
-        padding: 0.5rem;
-    }
-   
+.pastillas a{
+    text-decoration: none;
+    box-shadow: 0 2px 5px #544d47;
+    border-radius: .3rem;
+    padding: 0.5rem;
+}
 
+/* BLOQUE TEXTO */
 
 #bloque{
-
     background: url("../recursos/fondobloquecelu.jpg") center center;
     background-size: cover;
-    /* width: 100vw;
-    height: calc(100vw * 1.29465187); */
-    /* max-width: 576px;
-    max-height: 707px; */
-    
-    padding: 2rem;
-   /*  display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-    
+    padding: 2rem;    
 }
-
 
 #bloque h2, p{
-  font-size: 0.8rem;
-  line-height: 1.12rem;
+    font-size: 0.8rem;
+    line-height: 1.12rem;
 }
+
+/* GALERIA */
+
 #galeriacontenedor{
     margin: 1rem;
     display: flex;
@@ -236,14 +203,19 @@ figure{
 #galeriacontenedor a{
     text-decoration: none;
 }
+
 #galeria h2{
     text-align: center;
 }
 
+/* MULTIMEDIA */
+
 #video{
     max-width: 100%;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+
+/* CONTACTO */
 
 #contacto{
     display: flex;
@@ -262,32 +234,33 @@ form{
     gap: 1rem;
     flex-wrap: wrap;
     flex-direction: column;
-
-
 }
+
 .contactonombre div{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .contactonombre div input{
     display: flex;
     flex-grow: 1;
 }
+
 .contactonombre div label{
     width: 30%;
 }
-
 
 .contactorenovar{
     display: flex;
     justify-content: start;
 }
+
 .contactorenovar div{
     display: flex;
-
 }
+
 .checkboxes{
     margin-left: 2rem;
     display: flex;
@@ -295,19 +268,16 @@ form{
     gap: 0.6rem;
 }
 
+/* FOOTER */
 
 .piedepagina{
     display: flex;
     flex-direction: row;
 }
 
-/* .piedepagina img{
-    width: 8rem;
-
-} */
-
 .datosalumna{
     width: 80%;
+    font-size: small;
 }
 
 .datosalumna ul{
@@ -317,328 +287,313 @@ form{
 .redes{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
 .redes img{
     width: 100%;
-    
 }
+
+
+
+/*------------ TABLET ---------------------------*/
 
 @media screen and (min-width: 577px) /* and (max-width: 991px) */ {
     
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 12rem;
-        margin-bottom: 0rem;
-        margin-top: 1rem;
-    }
+/* HEADER */
 
-    h1 {
-        
-        
-        background: url("../recursos/logotablet.png") center center;
-        background-size: cover;
-        width: 35vw;
-        height: calc(35vw * .86936937);
-        max-width: 222px;
-        max-height: 193px;
-    }
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
 
+h1 {      
+    background: url("../recursos/logotablet.png") center center;
+    background-size: cover;
+    width: 35vw;
+    height: calc(35vw * .86936937);
+    max-width: 222px;
+    max-height: 193px;
+}
 
 #hamburguesa{
-        display: none;
-    }
-#barra{        
-        display: flex;
-        justify-content: flex-end;
-        column-gap: 0.3rem;
-    }
-    #menu{
-        flex: 1;
-    }
-
-    #barra li {
-        list-style: none;
-        flex: 0 130px;
-        text-align: center;
-    }
-    #barra li a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        padding: 0 20px;
-        line-height: 30px;
-    }
-
-   
-    
-    
-
-    section:first-child{
-        /* background: url(../recursos/bannertablet.jpg) center center;
-        height: 50vh;
-        display: flex;
-        justify-content: end; */
-
-        background: url("../recursos/bannertablet.jpg") center center;
-        background-size: cover;
-        width: 100vw;
-        height: calc(100vw * .86936937);
-        max-width: 991px;
-        max-height: 519px;
-        display: flex;
-        justify-content: end;
-    
-    }
-
-    section:first-child div{    
-        
-        align-items: flex-end;
-        text-align: right;
-        justify-content: space-around;
-        width: 60%;
-        
-        
-    }
-
-    section:first-child div p{
-        width: 80%;
-        
-    }
-
-    /* section:first-child h2{
-        width: 60%;
-    }
-
-    section:first-child p
-
-     */
-
-    .pastillas{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        
-    }
-
-    .pastillascontenedor{
-        flex-direction: column;
-        
-        width: 20rem;
-    }
-    .pastillascontenedor div p{
-        width: 100%;
-        
-    }
-    .pastillascontenedor div{
-        width: 90%;
-    }
-
-    #bloque{
-
-        background: url("../recursos/fondobloquetablet.jpg") center center;
-        background-size: cover;
-        width: 100vw;
-        /* height: calc(100vw * 1.29465187);
-        max-width: 991px;
-        max-height: 1283px; */
-        
-        padding: 2rem;
-        /* background-image: url(../recursos/fondobloquetablet.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        padding: 2rem; */
-    }
-
-    #bloque h2, p{
-        font-size: 1rem;
-        line-height: 1.4rem;
-      }
-
-    /* #bloque h2, p{
-        width: 100%;
-    } */
-
-    #galeria {
-        padding: 1rem;
-    }
-
-    #video {
-        position: relative;
-        width: 100%;
-         /* Proporción de aspecto 16:9 */
-         padding: 1rem;
-      }
-      
-      #video video {
-        
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        
-      }
-
-      form {
-        width: 80%;
-        margin: auto;
-      }
-
-      .datosalumna{
-        width: 50%;
-    }
+    display: none;
 }
 
+#barra{        
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.3rem;
+}
 
+#barra li {
+    list-style: none;
+    flex: 0 130px;
+    text-align: center;
+}
+    
+#barra li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 30px;
+}
+
+/* BANNER */
+
+section:first-child{
+    background: url("../recursos/bannertablet.jpg") center center;
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vw * .86936937);
+    max-width: 991px;
+    max-height: 519px;
+    display: flex;
+    justify-content: end;
+}
+
+section:first-child div{    
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-around;
+    width: 60%;
+}
+
+section:first-child div p{
+    width: 80%;
+}
+
+/* PASTILLAS */
+
+.pastillas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pastillascontenedor{
+    flex-direction: column;
+    width: 20rem;
+}
+
+.pastillascontenedor div{
+    width: 90%;
+}
+
+.pastillascontenedor div p{
+    width: 100%;
+}
+
+/* BLOQUE */
+
+#bloque{
+    background: url("../recursos/fondobloquetablet.jpg") center center;
+    background-size: cover;
+    width: 100vw;
+    padding: 2rem;
+}
+
+#bloque h2, p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+/* GALERIA */
+
+#galeria {
+    padding: 3rem;
+}
+
+/* MULTIMEDIA */
+
+#video {
+    padding: 1rem;
+}
+
+#video video {    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* CONTACTO */
+form {
+    width: 80%;
+    margin: auto;
+}
+
+/* FOOTER */
+
+.datosalumna{
+    width: 50%;
+}
+}
+
+/* --------------------PC-------------------------- */
 
 @media screen and (min-width: 992px) {
-    body{
-        max-width: 1300px;
-       margin: auto;
-    }
-    
-   /*  h1 {
-        
-        
-        background: url("../recursos/logopc.png") center center;
-        background-size: cover;
-        width: 35vw;
-        height: calc(35vw * .87);
-        max-width: 300px;
-        max-height: 261px;
-        
-    } */
 
-    h1 {
-        background: url(../recursos/logocelu.png) center center;
-    /* background-size: cover;
-    
-    text-indent: -800px;
-    overflow: hidden; */
-    width: 35vw;
-    height: calc(35vw * .87244898);
-    
-    max-width: 196px;
-    max-height: 171px;
-      
-    }
-
-    header{
-       /*  display: flex; */
-        flex-direction: row;
-        /* justify-content: space-between; */
-        align-items: flex-end;
-        height: 10rem;
-        font-size: 1.4rem;
-        /* margin-bottom: 0rem;
-        margin-top: 0rem; */
-
-    }
-
-    /* #hamburguesa{
-        display: none;
-    }
-#barra{        
-        display: flex;
-        justify-content: flex-end;
-        column-gap: 0.3rem;
-    }
-    #menu{
-        flex: 1;
-    }
-
-    #barra li {
-        list-style: none;
-        flex: 0 130px;
-        text-align: center;
-    }
-    #barra li a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        padding: 0 20px;
-        line-height: 30px;
-    }
- */
-
-
-    .animacionsubrayado {
-        position: relative;
-    }
-    
-    .animacionsubrayado::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #D3C5B7;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-    
-    .animacionsubrayado:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    section:first-child{
-        
-
-        background: url("../recursos/bannerweb.jpg") center center;
-        /* background-size: cover;
-        width: 100vw; */
-        height: calc(100vw * .39692308);
-        max-width: 1300px;
-        max-height: 516px;
-    }
-
-    .pastillas{
-align-items: flex-start;   
-gap: 1rem;     
-    }
-    .pastillascontenedor{
-        flex-direction: column;
-        align-items: stretch;
-        width: 18rem;
-        
-        
-    }
-    .pastillascontenedor div p{
-        width: 100%;
-        font-size: 0.8rem;
-        line-height: 1.12rem;
-
-        
-    }
-    .pastillascontenedor div{
-        width: 90%;
-        text-align: center;
-        
-        
-    }
-
-    .pastillascontenedor figure{
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        
-    }
-
-    .pastillascontenedor a {
-font-size: 0.8rem;        
-    }
-
-
-    
+body{
+    max-width: 1300px;
+    margin: auto;
 }
 
+/* HEADER */
+
+h1 {
+    background: url(../recursos/logocelu.png) center center;
+    width: 35vw;
+    height: calc(35vw * .87244898);
+    max-width: 196px;
+    max-height: 171px;
+}
+
+header{
+    flex-direction: row;
+    align-items: flex-end;
+    height: 10rem;
+    font-size: 1.4rem;
+}
+
+.animacionsubrayado {
+    position: relative;
+}
+
+.animacionsubrayado::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D3C5B7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+    
+.animacionsubrayado:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* BANNER */
+
+section:first-child{
+    background: url("../recursos/bannerweb.jpg") center center;
+    height: calc(100vw * .39692308);
+    max-width: 1300px;
+    max-height: 516px;
+}
+
+section:first-child div{
+    animation: slidein 1.5s ease-in-out forwards;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .pastillascontenedor h2 {
+        animation-delay: 0.2s;
+    }
+        
+    .pastillascontenedor p:nth-child(1) {
+        animation-delay: 0.4s;
+    }
+        
+    .pastillascontenedor p:nth-child(2) {
+        animation-delay: 0.6s;
+    }
+        
+    .pastillascontenedor p:nth-child(3) {
+        animation-delay: 0.8s;
+    }
+}
+
+/* PASTILLAS */
+
+.pastillas{
+    align-items: flex-start;   
+    gap: 1rem;    
+    margin: 1rem 0;
+    animation: slideinfrombottom 1.5s ease-in-out forwards;
+}
+
+.pastillascontenedor{
+    flex-direction: column;
+    align-items: stretch;
+    width: 18rem;
+}
+    
+@keyframes slideinfrombottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+    
+.pastillascontenedor div p{
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.12rem;
+}
+
+.pastillascontenedor div{
+    width: 90%;
+    text-align: center;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+.pastillascontenedor figure{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+    
+.pastillascontenedor a {
+    font-size: 0.8rem;
+}
+    
+.pastillascontenedor figure:hover {
+    transform: translate(0, -10px);
+}
+    
+.pastillascontenedor a:hover {
+    transform: translate(0, -5px);
+    background-color: #D3C5B7;
+    color: #F3F0E8;
+    font-weight: 600;
+}
+
+/* BLOQUE */
+
+#bloque{
+    background: url("../recursos/fondobloquepc.jpg") center center;
+    background-size: cover;
+    width: 100%;
+    padding: 3rem;
+}
+}
