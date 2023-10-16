@@ -31,22 +31,24 @@ body {
 /* HEADER */
 header {
     background: #F3F0E8;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     height: 8rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 h1 {
-    background-image: url(../recursos/logo.png);
+    background: url(../recursos/logocelu.png) center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    
     text-indent: -800px;
     overflow: hidden;
-    width: 10rem;
-    height: 5rem;
-    margin-top: 2rem;
+    width: 35vw;
+    height: calc(35vw * .87244898);
+    margin-top: 0.1vh;
+    max-width: 196px;
+    max-height: 171px;
+    margin: auto;
     
 }
 
@@ -179,7 +181,7 @@ align-items: center;
 }
 
 .pastillascontenedor div{
-    width: 95%;
+    width: 60%;
 }
 
 figure{
@@ -202,14 +204,25 @@ figure{
 
 
 #bloque{
-    background-image: url(../recursos/fondobloquecelu.jpg);
-    background-repeat: no-repeat;
+
+    background: url("../recursos/fondobloquecelu.jpg") center center;
     background-size: cover;
+    /* width: 100vw;
+    height: calc(100vw * 1.29465187); */
+    /* max-width: 576px;
+    max-height: 707px; */
+    
     padding: 2rem;
+   /*  display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    
 }
+
+
 #bloque h2, p{
-  font-size: 0.9rem;
-  line-height: 1.4rem;
+  font-size: 0.8rem;
+  line-height: 1.12rem;
 }
 #galeriacontenedor{
     margin: 1rem;
@@ -313,15 +326,37 @@ form{
     
 }
 
-@media screen and (min-width: 577px) and (max-width: 991px) {
+@media screen and (min-width: 577px) /* and (max-width: 991px) */ {
     
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 12rem;
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    }
+
+    h1 {
+        
+        
+        background: url("../recursos/logotablet.png") center center;
+        background-size: cover;
+        width: 35vw;
+        height: calc(35vw * .86936937);
+        max-width: 222px;
+        max-height: 193px;
+    }
+
+
 #hamburguesa{
         display: none;
     }
 #barra{        
         display: flex;
         justify-content: flex-end;
-        column-gap: 20px;
+        column-gap: 0.3rem;
     }
     #menu{
         flex: 1;
@@ -340,63 +375,55 @@ form{
         line-height: 30px;
     }
 
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 12rem;
-    }
-    .animacionsubrayado {
-        position: relative;
-    }
+   
     
-    .animacionsubrayado::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #D3C5B7;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-        
-    }
-    
-    .animacionsubrayado:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-        
-    }
-
-    .animacionsubrayado:hover{font-weight: 600;}
     
 
     section:first-child{
-        background-image: url(../recursos/bannertablet.jpg);
-        /* background-repeat: no-repeat;    
-        background-size: cover; */  
+        /* background: url(../recursos/bannertablet.jpg) center center;
         height: 50vh;
+        display: flex;
+        justify-content: end; */
+
+        background: url("../recursos/bannertablet.jpg") center center;
+        background-size: cover;
+        width: 100vw;
+        height: calc(100vw * .86936937);
+        max-width: 991px;
+        max-height: 519px;
+        display: flex;
+        justify-content: end;
+    
     }
 
     section:first-child div{    
         
-        
         align-items: flex-end;
         text-align: right;
+        justify-content: space-around;
+        width: 60%;
+        
         
     }
 
-    section:first-child h2, p{
+    section:first-child div p{
+        width: 80%;
+        
+    }
+
+    /* section:first-child h2{
         width: 60%;
     }
+
+    section:first-child p
+
+     */
 
     .pastillas{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        
         
     }
 
@@ -409,9 +436,39 @@ form{
         width: 100%;
         
     }
+    .pastillascontenedor div{
+        width: 90%;
+    }
+
+    #bloque{
+
+        background: url("../recursos/fondobloquetablet.jpg") center center;
+        background-size: cover;
+        width: 100vw;
+        /* height: calc(100vw * 1.29465187);
+        max-width: 991px;
+        max-height: 1283px; */
+        
+        padding: 2rem;
+        /* background-image: url(../recursos/fondobloquetablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 2rem; */
+    }
 
     #bloque h2, p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+
+    /* #bloque h2, p{
         width: 100%;
+    } */
+
+    #galeria {
+        padding: 1rem;
     }
 
     #video {
@@ -429,6 +486,15 @@ form{
         left: 0;
         
       }
+
+      form {
+        width: 80%;
+        margin: auto;
+      }
+
+      .datosalumna{
+        width: 50%;
+    }
 }
 
 
@@ -438,6 +504,141 @@ form{
         max-width: 1300px;
        margin: auto;
     }
+    
+   /*  h1 {
+        
+        
+        background: url("../recursos/logopc.png") center center;
+        background-size: cover;
+        width: 35vw;
+        height: calc(35vw * .87);
+        max-width: 300px;
+        max-height: 261px;
+        
+    } */
+
+    h1 {
+        background: url(../recursos/logocelu.png) center center;
+    /* background-size: cover;
+    
+    text-indent: -800px;
+    overflow: hidden; */
+    width: 35vw;
+    height: calc(35vw * .87244898);
+    
+    max-width: 196px;
+    max-height: 171px;
+      
+    }
+
+    header{
+       /*  display: flex; */
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: flex-end;
+        height: 10rem;
+        font-size: 1.4rem;
+        /* margin-bottom: 0rem;
+        margin-top: 0rem; */
+
+    }
+
+    /* #hamburguesa{
+        display: none;
+    }
+#barra{        
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 0.3rem;
+    }
+    #menu{
+        flex: 1;
+    }
+
+    #barra li {
+        list-style: none;
+        flex: 0 130px;
+        text-align: center;
+    }
+    #barra li a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 0 20px;
+        line-height: 30px;
+    }
+ */
+
+
+    .animacionsubrayado {
+        position: relative;
+    }
+    
+    .animacionsubrayado::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #D3C5B7;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .animacionsubrayado:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    section:first-child{
+        
+
+        background: url("../recursos/bannerweb.jpg") center center;
+        /* background-size: cover;
+        width: 100vw; */
+        height: calc(100vw * .39692308);
+        max-width: 1300px;
+        max-height: 516px;
+    }
+
+    .pastillas{
+align-items: flex-start;   
+gap: 1rem;     
+    }
+    .pastillascontenedor{
+        flex-direction: column;
+        align-items: stretch;
+        width: 18rem;
+        
+        
+    }
+    .pastillascontenedor div p{
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 1.12rem;
+
+        
+    }
+    .pastillascontenedor div{
+        width: 90%;
+        text-align: center;
+        
+        
+    }
+
+    .pastillascontenedor figure{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+    }
+
+    .pastillascontenedor a {
+font-size: 0.8rem;        
+    }
+
+
     
 }
 
