@@ -508,21 +508,6 @@ section:first-child div{
         opacity: 1;
     }
 
-    .pastillascontenedor h2 {
-        animation-delay: 0.2s;
-    }
-        
-    .pastillascontenedor p:nth-child(1) {
-        animation-delay: 0.4s;
-    }
-        
-    .pastillascontenedor p:nth-child(2) {
-        animation-delay: 0.6s;
-    }
-        
-    .pastillascontenedor p:nth-child(3) {
-        animation-delay: 0.8s;
-    }
 }
 
 /* PASTILLAS */
@@ -531,7 +516,7 @@ section:first-child div{
     align-items: flex-start;   
     gap: 1rem;    
     margin: 1rem 0;
-    animation: slideinfrombottom 1.5s ease-in-out forwards;
+    animation: slideinfrombottom 1s ease-in-out forwards;
 }
 
 .pastillascontenedor{
@@ -596,4 +581,5 @@ section:first-child div{
     width: 100%;
     padding: 3rem;
 }
+
 }
